@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180">
+  <rect width="320" height="180" rx="12" fill="#14182f"/>
+  <circle cx="160" cy="90" r="46" fill="none" stroke="#7c9bff" stroke-width="3"/>
+  <circle cx="160" cy="90" r="8" fill="#d7e2ff"/>
+  <path d="M160 28 v18 M160 134 v18 M78 90 h18 M224 90 h18" stroke="#9bb4ff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="70" cy="40" r="10" fill="#6d7cff"/><circle cx="250" cy="138" r="8" fill="#b794f6"/>
+  <text x="24" y="28" fill="#efe7ff" font-family="Georgia, serif" font-size="14">Gauss</text>
+</svg>

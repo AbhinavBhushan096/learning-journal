@@ -1,0 +1,21 @@
+{
+  "name": "learning-journal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-ready public learning journal and secure owner dashboard.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development node --watch server/index.js",
+    "start": "NODE_ENV=production node server/index.js",
+    "build": "node scripts/build.js",
+    "lint": "node scripts/lint.js",
+    "test": "NODE_ENV=test node --test --test-reporter=spec",
+    "check": "npm run lint && npm test && npm run build"
+  },
+  "dependencies": {
+    "mssql": "^12.7.14"
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180">
+  <rect width="320" height="180" rx="12" fill="#10241c"/>
+  <ellipse cx="160" cy="90" rx="78" ry="48" fill="none" stroke="#86efac" stroke-width="3"/>
+  <circle cx="150" cy="90" r="16" fill="#bbf7d0"/>
+  <circle cx="190" cy="78" r="8" fill="#4ade80"/><circle cx="186" cy="108" r="6" fill="#22c55e"/>
+  <text x="28" y="32" fill="#d1fae5" font-family="Georgia, serif" font-size="14">Cell map</text>
+</svg>

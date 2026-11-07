@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080b17">
+  <meta name="description" content="A public record of daily learning, revision, projects and reflections.">
+  <meta property="og:title" content="Aryan's Learning Journal">
+  <meta property="og:description" content="Learning in public, one day at a time.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Aryan's Learning Journal</title>
+</head>
+<body>
+  <a class="skip-link" href="#journal">Skip to journal</a>
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="m2 10 10-5 10 5-10 5L2 10Zm4 2.5V17c3.5 2.7 8.5 2.7 12 0v-4.5M22 10v6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-5 3.5-7 8-7s7.2 2 8 7"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v10h-6v-6H9v6H3V11Z"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 4h6a4 4 0 0 1 4 4v13a4 4 0 0 0-4-4H4V4Zm16 0h-6v17a4 4 0 0 1 4-4h2V4Z"/></symbol>
+    <symbol id="i-note" viewBox="0 0 24 24"><path d="M5 3h14v18H5zM8 8h8M8 12h8M8 16h5"/></symbol>
+    <symbol id="i-project" viewBox="0 0 24 24"><path d="M4 7h16v13H4zM8 7l2-3h4l2 3M8 11h8M8 15h5"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4V3Z"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></symbol>
+    <symbol id="i-location" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M13 22c5 0 8-3.5 8-8 0-3-1.5-6-5-9 .2 3-1 5-2.5 6.5.2-4-1.7-7-5-9 .3 4-5.5 7-5.5 12.5 0 4 3.5 7 8 7h2Z"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="m3 12 9 9 9-9-9-9H3v9Z"/><circle cx="8" cy="8" r="1"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l2-2"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m4 17 5-5 4 4 2-2 5 4"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 7 8 5-8 5V7Z"/><circle cx="12" cy="12" r="10"/></symbol>
+    <symbol id="i-cards" viewBox="0 0 24 24"><rect x="6" y="3" width="13" height="17" rx="2"/><path d="M6 7 3 8v12a2 2 0 0 0 2 2h10M10 8h5M10 12h5M10 16h3"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></symbol>
+    <symbol id="i-article" viewBox="0 0 24 24"><path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m8 10 4 4 4-4"/></symbol>
+    <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="m4 20 4-.5L19 8.5 15.5 5 4.5 16 4 20ZM14 6l3.5 3.5"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 14h8l1-14M10 11v6M14 11v6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 15v5h16v-5"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 13v7H4V6h7"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-logout" viewBox="0 0 24 24"><path d="M10 4H4v16h6M14 8l4 4-4 4M8 12h10"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 13.5v-3l-2-.7-.7-1.7.9-1.9-2.1-2.1-1.9.9-1.7-.7-.7-2h-3l-.7 2-1.7.7-1.9-.9L1.8 6.2l.9 1.9L2 9.8l-2 .7v3l2 .7.7 1.7-.9 1.9 2.1 2.1 1.9-.9 1.7.7.7 2h3l.7-2 1.7-.7 1.9.9 2.1-2.1-.9-1.9.7-1.7 2-.7Z" transform="scale(.85) translate(2.1 2.1)"/></symbol>
+  </svg>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Learning Journal home"><span class="brand-mark"><svg><use href="#i-cap"/></svg></span><strong id="brand-name">Learning Journal</strong></a>
+    <nav class="topnav" aria-label="Primary navigation"><a class="active" href="#/" data-nav="home">Home</a><a href="#/about" data-nav="about">About</a><a href="#/stats" data-nav="stats">Stats</a><a href="#/now" data-nav="now">Now</a></nav>
+    <div class="top-actions">
+      <label class="search-box"><svg class="icon"><use href="#i-search"/></svg><span class="sr-only">Search journal</span><input id="global-search" type="search" placeholder="Search my learning…" autocomplete="off"><kbd>/</kbd></label>
+      <button class="icon-button" id="theme-button" aria-label="Toggle contrast" title="Toggle contrast">☼</button>
+      <button class="button button-primary follow-button" data-share><svg><use href="#i-user"/></svg><span>Follow</span></button>
+    </div>
+  </header>
+  <div id="app" class="app-shell" aria-live="polite">
+    <div class="loading-screen"><div class="loader"></div><p>Opening the journal…</p></div>
+  </div>
+  <div id="modal-root"></div>
+  <div class="toast-region" id="toasts" aria-live="polite" aria-atomic="true"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

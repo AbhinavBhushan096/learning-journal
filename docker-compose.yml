@@ -1,0 +1,18 @@
+services:
+  learning-journal:
+    build: .
+    ports:
+      - "8787:8787"
+    environment:
+      APP_ORIGIN: http://localhost:8787
+      ADMIN_EMAIL: ${ADMIN_EMAIL:?Set ADMIN_EMAIL in .env}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Set ADMIN_PASSWORD in .env (12+ characters)}
+      OWNER_NAME: ${OWNER_NAME:-Aryan}
+      OWNER_HANDLE: ${OWNER_HANDLE:-aryanlearns}
+    volumes:
+      - journal-data:/app/data
+      - journal-uploads:/app/uploads
+    restart: unless-stopped
+volumes:
+  journal-data:
+  journal-uploads:

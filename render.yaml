@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: learning-journal
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    envVars:
+      - key: APP_ORIGIN
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: DATABASE_PATH
+        value: /app/storage/data/journal.db
+      - key: UPLOAD_DIR
+        value: /app/storage/uploads
+    disk:
+      name: learning-journal-data
+      mountPath: /app/storage
+      sizeGB: 2
