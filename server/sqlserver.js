@@ -129,7 +129,7 @@ class AzureDb {
   async exec(sql) {
     const command = String(sql || '').trim().toUpperCase();
     if (command === 'BEGIN') {
-      this.tx = new sql.Transaction(this.pool);
+      this.tx = this.pool.transaction();
       await this.tx.begin();
       return;
     }

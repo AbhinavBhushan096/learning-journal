@@ -9,6 +9,7 @@ function loadEnv(file = path.join(root, '.env')) {
   for (const line of fs.readFileSync(file, 'utf8').split(/\r?\n/)) {
     const match = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*)\s*$/);
     if (!match || process.env[match[1]] !== undefined) continue;
+    if (process.env.NODE_ENV === 'test' && ['ADMIN_EMAIL', 'ADMIN_PASSWORD', 'OWNER_NAME', 'OWNER_HANDLE', 'AZURE_SQL_SERVER', 'AZURE_SQL_DATABASE', 'AZURE_SQL_USER', 'AZURE_SQL_PASSWORD'].includes(match[1])) continue;
     let value = match[2];
     if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) value = value.slice(1, -1);
     process.env[match[1]] = value;
